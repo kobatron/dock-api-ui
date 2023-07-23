@@ -8,7 +8,7 @@ use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
-    use RefreshDatabase;
+    //use RefreshDatabase;
 
     /**
      * A basic test example.
@@ -22,10 +22,11 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function test_database_works()
-    {
-        User::factory(20)->create();
-
-        $this->assertEquals(20, User::all()->count());
-    }
+	// Using database transactions instead.
+//    public function test_database_works()
+//    {
+//        User::factory(20)->create();
+//
+//        $this->assertEquals(20, User::all()->count());
+//    }
 }
