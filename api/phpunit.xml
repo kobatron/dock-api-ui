@@ -17,17 +17,18 @@
     </include>
   </coverage>
   <php>
-    <env name="APP_ENV" value="testing"/>
     <!--<env name="BCRYPT_ROUNDS" value="4"/>-->
     <!--<env name="CACHE_DRIVER" value="array"/>-->
-    <env name="DB_DATABASE" value="fullstack_challenge"/>
     <!--<env name="MAIL_MAILER" value="array"/>-->
-    <env name="QUEUE_CONNECTION" value="sync"/>
     <!--<env name="SESSION_DRIVER" value="array"/>-->
     <!--<env name="TELESCOPE_ENABLED" value="false"/>-->
 
+    <env name="APP_ENV" value="testing"/>
+    <env name="DB_DATABASE" value="fullstack_challenge"/>
+    <env name="QUEUE_CONNECTION" value="database"/>
     <env name="DB_HOST" value="localhost"/>
     <env name="DB_USERNAME" value="homestead"/>
     <env name="DB_PASSWORD" value="secret"/>
+    <env name="REDIS_HOST" value="localhost"/>
   </php>
 </phpunit>

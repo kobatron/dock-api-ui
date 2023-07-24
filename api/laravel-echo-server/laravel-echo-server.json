@@ -1,0 +1,21 @@
+{
+    "authHost": "http://app",
+    "authEndpoint": "/broadcasting/noauth",
+    "database": "redis",
+    "databaseConfig": {
+        "redis": {
+            "host": "redis"
+        }
+    },
+    "devMode": true,
+    "host": null,
+    "port": "6001",
+    "protocol": "http",
+    "socketio": {},
+    "apiOriginAllow": {
+        "allowCors": false,
+        "allowOrigin": "",
+        "allowMethods": "",
+        "allowHeaders": ""
+    }
+}

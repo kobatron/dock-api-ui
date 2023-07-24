@@ -7,6 +7,10 @@ services:
             - "80:80"
         volumes:
             - .:/var/www/html
+        depends_on:
+            - redis
+            - mysql
+            - laravel-echo-server
 
     mysql:
         image: mysql:8
@@ -24,6 +28,25 @@ services:
             - "6379:6379"
         volumes:
             - redis_data:/data
+
+    laravel-echo-server:
+        build:
+            context: ./docker
+            dockerfile: Dockerfile.echo
+        ports:
+            - '6001:6001'
+        volumes:
+            - ./laravel-echo-server:/echo-server
+
+    laravel-worker:
+        build:
+            context: ./docker
+            dockerfile: Dockerfile.worker
+        volumes:
+            - .:/var/www/html
+        depends_on:
+            - redis
+            - mysql
 
 volumes:
     mysql_data:

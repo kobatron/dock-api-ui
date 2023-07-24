@@ -1,0 +1,29 @@
+FROM php:8.1-fpm
+
+# Update packages and install dependencies
+RUN apt-get update && apt-get install -y \
+    pkg-config \
+    libzip-dev \
+    supervisor
+
+# Install PHP extensions
+RUN docker-php-ext-install \
+    mysqli \
+    pdo_mysql \
+    zip \
+    bcmath
+
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+
+# Set working directory
+WORKDIR /var/www/html
+
+# Copy application code
+COPY . /var/www/html
+
+# Copy supervisor configuration
+COPY ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+# Start Supervisor
+CMD ["/usr/bin/supervisord", "-n"]
