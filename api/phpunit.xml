@@ -26,9 +26,5 @@
     <env name="APP_ENV" value="testing"/>
     <env name="DB_DATABASE" value="fullstack_challenge"/>
     <env name="QUEUE_CONNECTION" value="database"/>
-    <env name="DB_HOST" value="localhost"/>
-    <env name="DB_USERNAME" value="homestead"/>
-    <env name="DB_PASSWORD" value="secret"/>
-    <env name="REDIS_HOST" value="localhost"/>
   </php>
 </phpunit>
