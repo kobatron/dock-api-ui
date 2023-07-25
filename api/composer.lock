@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "698f35f8823fd597d28d5e73774a25a8",
+    "content-hash": "d4960b21dd5820d379ccf612454b5594",
     "packages": [
         {
             "name": "brick/math",
@@ -66,8 +66,17 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:tarekadam/bythepixel-weather-challenge",
-                "reference": "86da85f09ae50b9c01a6f4cee8af3728706b8c8b"
+                "url": "https://github.com/kobatron/bythepixel-weather-challenge.git",
+                "reference": "92052f69afb6af0ad7fd8e962a19587549387e27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kobatron/bythepixel-weather-challenge/zipball/92052f69afb6af0ad7fd8e962a19587549387e27",
+                "reference": "92052f69afb6af0ad7fd8e962a19587549387e27",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.2"
             },
             "default-branch": true,
             "type": "laravel",
@@ -103,7 +112,10 @@
                 "laravel",
                 "package"
             ],
-            "time": "2023-07-23T17:39:34+00:00"
+            "support": {
+                "source": "https://github.com/kobatron/bythepixel-weather-challenge/tree/master"
+            },
+            "time": "2023-07-25T14:30:57+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
