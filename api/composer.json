@@ -8,7 +8,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/kobatron/bythepixel-weather-challenge"
+            "url": "https://github.com/kobatron/bythepixel-composer-package"
         }
     ],
 

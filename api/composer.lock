@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4960b21dd5820d379ccf612454b5594",
+    "content-hash": "15866122e438943dd8bde4f919bd978d",
     "packages": [
         {
             "name": "brick/math",
@@ -66,13 +66,13 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kobatron/bythepixel-weather-challenge.git",
-                "reference": "92052f69afb6af0ad7fd8e962a19587549387e27"
+                "url": "https://github.com/kobatron/bythepixel-composer-package.git",
+                "reference": "2bcb8799986da65a446a8775010a592b1b7f61e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kobatron/bythepixel-weather-challenge/zipball/92052f69afb6af0ad7fd8e962a19587549387e27",
-                "reference": "92052f69afb6af0ad7fd8e962a19587549387e27",
+                "url": "https://api.github.com/repos/kobatron/bythepixel-composer-package/zipball/2bcb8799986da65a446a8775010a592b1b7f61e7",
+                "reference": "2bcb8799986da65a446a8775010a592b1b7f61e7",
                 "shasum": ""
             },
             "require": {
@@ -113,9 +113,9 @@
                 "package"
             ],
             "support": {
-                "source": "https://github.com/kobatron/bythepixel-weather-challenge/tree/master"
+                "source": "https://github.com/kobatron/bythepixel-composer-package/tree/master"
             },
-            "time": "2023-07-25T14:30:57+00:00"
+            "time": "2023-07-25T15:03:29+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
