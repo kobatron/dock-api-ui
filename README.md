@@ -1,3 +1,14 @@
+# Submission by Tarek Adam
+- fully implmeneted in a php/composer package rather than app dir
+- sockets without 3rd party service like pusher
+- http://openweathermap.org api (see email for .env api key)
+- https://github.com/erikflowers/weather-icons
+- persistant client side storage accross page loads.
+
+# Package Build
+- https://github.com/kobatron/bythepixel-composer-package
+- code appears in vendor/bythepixel
+
 # Fullstack Challenge
 
 ## Instructions
