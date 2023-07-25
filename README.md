@@ -1,13 +1,45 @@
 # Submission by Tarek Adam
-- fully implmeneted in a php/composer package rather than app dir
-- sockets without 3rd party service like pusher
+- custom composer/vendor package for ByThePixel
+- sockets without 3rd party service
 - persistant client side storage accross page loads.
 - http://openweathermap.org api (see email for .env api key)
-- https://github.com/erikflowers/weather-icons
 
 # Package Build
 - https://github.com/kobatron/bythepixel-composer-package
 - code appears in vendor/bythepixel
+
+# REPO
+0. `git clone https://github.com/kobatron/dock-api-ui.git tarek-adam-challenge`
+
+# Steps: api & docker
+These instructions use both your base machine as well as docker instances.
+1. go to `cd tarek-adam-challenge/api`
+2. add the dot-env.txt from email into tarek-adam-challenge/api/.env (rename file to .env)
+4. bring up docker from tarek-adam-challenge/api dir `docker-compose up --build -d`
+5. ssh into a laravel node `docker exec -it fullstack-challenge-laravel-worker-1 bash`
+6. from docker command line `composer install`
+7. take a look at /var/www/htmlvendor/by-the-pixel !!!
+8. `php artisan migrate`
+9. `php artisan db:seed`
+
+# Steps: frontend
+These instractions are on your base machine.
+1. go to `cd tarek-adam-challenge/frontend`
+2. run `npm install`
+3. run 'npm run dev'
+4. open http://localhost:5173/
+5. Open the browser dev console to observe socket activity.
+
+# Notes on .env
+- more redis
+- database job que
+- no need for test db (db transactions instead)
+- weather api key
+
+# Notes on docker
+- socket server
+- job que worker
+- web server should be changed to supervised service but I didn't mess with that config.
 
 # Fullstack Challenge
 
