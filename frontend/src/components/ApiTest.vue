@@ -6,6 +6,7 @@ export default {
 
   created() {
     this.fetchData()
+    this.intervalId = setInterval(this.fetchData, 30000);
   },
 
   methods: {
@@ -29,3 +30,8 @@ export default {
     </code>
   </div>
 </template>
+<style scoped>
+div {
+  display: none;
+}
+</style>
